@@ -1,0 +1,24 @@
+# over-loading-
+class Printer {
+  
+    public void add(int n) {
+        System.out.println( "The number is " + n);
+    }
+
+    void name(String text) {
+        System.out.println("Text is " + text);
+    }
+
+    void one(int a) {
+        System.out.println("Value is " + a);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Printer p = new Printer();
+        p.add(5);
+        p.name("Hello");
+        p.one(5);
+    }
+}
