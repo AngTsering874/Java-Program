@@ -1,0 +1,30 @@
+# over-writing
+class Vehicle {
+    void speed() {
+        System.out.println("Vehicles have different speeds");
+    }
+}
+class Car extends Vehicle {
+     void speed() {
+        System.out.println("Cars usually go fast!");
+    }
+}
+
+class Bicycle extends Vehicle {
+        void speed() {
+        System.out.println("Bicycles are slower but eco-friendly!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle myVehicle = new Vehicle();
+        myVehicle.speed();  // Calls the Vehicle class method
+
+        Vehicle myCar = new Car();
+        myCar.speed();  // Calls the overridden method in Car class
+
+        Vehicle myBike = new Bicycle();
+        myBike.speed();  // Calls the overridden method in Bicycle class
+    }
+}
