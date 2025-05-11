@@ -1,0 +1,17 @@
+# retur-n-value
+public class Value{
+    public int back(int a, int b){
+     int sum=a+b;
+     return sum;
+     
+        
+    }
+    public static void main(String[] args){
+        int a=20, b=20;
+        Value j=new Value();
+        int sum=j.back(a,b);
+        System.out.println("The sum is " +sum);
+            }
+}
+
+
