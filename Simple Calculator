@@ -1,0 +1,52 @@
+import java.util.Scanner;
+class operatiors{
+    public static void main(String[] args){
+       int i,j;
+       char k;
+       int l=1,total=0;
+       System.out.println("if you want exit the enter anykey in place of operators");
+       System.out.println("enter a first num: \n");
+       Scanner arr=new Scanner(System.in);
+       i=arr.nextInt();
+       while(l>0){
+       
+       k=arr.next().charAt(0);
+    System.out.println("choose +,-,*,/: \n");
+       switch(k){
+           case '+':
+                  System.out.println("enter a number: \n");
+                  j=arr.nextInt();
+                  total=i+j;
+                  System.out.println(total);
+                 i=total; 
+                  break;
+            case '-':
+                  System.out.println("enter a number: \n");
+                  j=arr.nextInt();
+                  total=i-j;
+                  System.out.println(total);
+               i=total; 
+                  break;
+            case '/':
+                  System.out.println("enter a number: \n");
+                  j=arr.nextInt();
+                  total=i/j;
+                  System.out.println(total);
+                i=total; 
+                  break;
+            case '*':
+                  System.out.println("enter a number: \n");
+                  j=arr.nextInt();
+                  total=i*j;
+                  System.out.println(total);
+               i=total; 
+                  break;
+            default :
+            l=0;
+             
+               
+       }
+          
+       }
+    }
+}
