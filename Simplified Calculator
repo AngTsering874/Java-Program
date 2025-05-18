@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class Clear{
+
+    public static void main(String[] args) {
+        int first,second,total,d=0;
+        char oper;
+        while(d==0){
+            int c=0;
+            System.out.println("IF you wish to clear it as AC the press 'A'");
+        System.out.println("Enter the first number:");
+        Scanner aa= new Scanner(System.in);
+        first=aa.nextInt();
+        total=first;
+        while(c==0){
+           
+            System.out.println("Enter suitable operator + - / * or press E for exit: ");
+            
+            oper=aa.next().charAt(0);
+            switch(oper){
+                case '+':
+                System.out.println("Enter a seconmd number::: ");
+                second=aa.nextInt();
+                total=total+second;
+                System.out.println(":::::::::"+total);
+                break;
+                case '-':
+                System.out.println("Enter a seconmd number::: ");
+                second=aa.nextInt();
+                total=total-second;
+                System.out.println(":::::::::"+total);
+                break;
+                case '*':
+                System.out.println("Enter a seconmd number::: ");
+                second=aa.nextInt();
+                total=total*second;
+                System.out.println(":::::::::"+total);
+                break;
+                case '/':
+                System.out.println("Enter a seconmd number::: ");
+                second=aa.nextInt();
+                total=total/second;
+                System.out.println(":::::::::"+total);
+                break;
+                case 'A':
+                c=1;
+                break;
+            
+                default: c=1;d=1;
+
+                
+            }
+
+        }
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();
+
+        
+    }}
+}
